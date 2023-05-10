@@ -4,11 +4,11 @@ module Utils.Hopf
 
 hopfinverse :: Floating a => a -> a -> a -> a -> (a,a,a,a)
 hopfinverse q0 q1 q2 t =
-  let h = (1 / sqrt (2 * (1+q2))) in
-  (h* (cos t * q0 + sin t * q1),
-   h * sin t * (1+q2),
-   h * cos t * (1+q2),
-   h * (sin t * q0 - cos t * q1))
+  let h = 1 / sqrt (2 * (1+q0)) in
+  (h * (cos t * q2 + sin t * q1),
+   h * (cos t * q1 - sin t * q2),
+   h * sin t * (1+q0),
+   h * cos t * (1+q0))
 
 -- hopfinverse' :: (Num a, Floating a) => a -> a -> a -> (a,a,a,a)
 -- hopfinverse' theta phi =

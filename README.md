@@ -11,3 +11,5 @@
 ![](gallery/wavyTorus.gif)
 
 ![](gallery/gears.gif)
+
+![](gallery/HopfTorus.gif)

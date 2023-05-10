@@ -24,13 +24,14 @@ tripletOnCircle m u = -- m is the number of lobes
   , stereoCircHinv'' x y z 2
   , stereoCircHinv'' x y z 4)
   where
-    k = 3.0
-    n = fromIntegral m
-    cosnu = cos (n*u)
-    d = sqrt (1 + k*k*cosnu*cosnu) -- manque sqrt sur mon blog !
-    x = cos u / d
-    y = sin u / d
-    z = k * cosnu / d
+    a = 0.44
+    nlobes = fromIntegral m
+    b = pi/2 - (pi/2 - a)*cos(u*nlobes)
+    c = u + a*sin(2*u*nlobes)
+    x = cos b
+    sinb = sin b
+    y = sinb * cos c
+    z = sinb * sin c
 
 myTriplets :: Int -> Int -> [(Point, Point, Point)]
 myTriplets m n = map (tripletOnCircle m) u_ -- n: number of circles
