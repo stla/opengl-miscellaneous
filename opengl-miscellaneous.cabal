@@ -28,7 +28,6 @@ library
                      , containers
                      , colour
                      , palette
-                     , ilist
                      , linear
                      , extra
                      , split
