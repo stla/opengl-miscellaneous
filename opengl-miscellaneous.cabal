@@ -1,0 +1,53 @@
+name:                opengl-miscellaneous
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/stla/opengl-miscellaneous#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Stéphane Laurent
+maintainer:          laurent_step@outlook.fr
+copyright:           2023 Stéphane Laurent
+category:            Graphics
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Utils.OpenGL
+                     , Utils.Palettes
+                     , WavyTorus.Data
+                     , WavyTorus.WavyTorus
+  build-depends:       base >= 4.7 && < 5
+                     , OpenGL
+                     , GLUT
+                     , gl-capture
+                     , bytestring
+                     , containers
+                     , colour
+                     , palette
+                     , ilist
+                     , linear
+                     , extra
+                     , split
+                     , numeric-tools
+                     , vector
+                     , lens
+                     , array
+
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
+
+source-repository head
+  type:     git
+  location: https://github.com/stla/opengl-miscellaneous
