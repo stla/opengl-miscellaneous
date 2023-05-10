@@ -10,3 +10,4 @@
 
 ![](gallery/wavyTorus.gif)
 
+![](gallery/gears.gif)
