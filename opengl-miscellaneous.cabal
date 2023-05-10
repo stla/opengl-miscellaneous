@@ -18,8 +18,11 @@ library
   hs-source-dirs:      src
   exposed-modules:     Utils.OpenGL
                      , Utils.Palettes
+                     , Utils.TorusTransformationMatrix
+                     , Utils.Hopf
                      , Gear.Data
                      , Gear
+                     , HopfTorus
                      , WavyTorus.Data
                      , WavyTorus
   build-depends:       base >= 4.7 && < 5
