@@ -18,6 +18,13 @@ packages:
       size: 851
   original:
     hackage: numeric-tools-0.2.0.1
+- completed:
+    hackage: ilist-0.4.0.1@sha256:5947f12a9354512149f7a5610769a6c8cebdb8d241a45b508edb70b371460747,3305
+    pantry-tree:
+      sha256: 8f5e1e5a857dde8fb79cec8bad113f2e5b59cf2b95b502a7e4bbf9a5f20d0e63
+      size: 438
+  original:
+    hackage: ilist-0.4.0.1
 snapshots:
 - completed:
     sha256: 126fa33ceb11f5e85ceb4e86d434756bd9a8439e2e5776d306a15fbc63b01e89
