@@ -22,6 +22,7 @@ library
                      , Utils.Hopf
                      , Gear.Data
                      , Gear
+                     , HopfCylinder
                      , HopfTorus
                      , WavyTorus.Data
                      , WavyTorus

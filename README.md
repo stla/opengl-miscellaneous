@@ -13,3 +13,5 @@
 ![](gallery/gears.gif)
 
 ![](gallery/HopfTorus.gif)
+
+![](gallery/HopfCylinder.gif)
